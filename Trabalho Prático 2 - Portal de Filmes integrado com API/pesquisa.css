@@ -1,0 +1,50 @@
+.logo{
+  max-width: 150px;
+}
+.headerPesquisa{
+  background-color: red;
+}
+.telaPesquisa{
+    background-color:rgb(24, 29, 32);
+}
+.telaPesquisa h1{
+    color: aliceblue;
+}
+.telaPesquisa h2{
+    color: aliceblue;
+}
+.telaPesquisa h6{
+    color: aliceblue;
+}
+.telaPesquisa p{
+    color: aliceblue;
+}
+#imagemLogo{
+    max-width: 250px;
+    margin-top: 30px;
+}
+* {
+    box-sizing: border-box;
+  }
+  .searchName {
+    text-align: center;
+    padding: 40px;
+  }
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 10px;
+  }
+  .link {
+    text-decoration: none;
+  }
+  .imgRow {
+    text-align: center;
+  }
+  .imagem {
+    max-width: 300px;
+    margin-bottom: 5px;
+  }
+  .textMovie{
+    font-size:x-large;
+  }

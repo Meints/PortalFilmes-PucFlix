@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>PucFlix 2.0</title>
+</head>
+
+<body>
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container menu">
+               <a href="index.html"><img class="logo" src="imagens/PucFlix branco.png"></a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#lancamentos">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destaques">Em destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#entrevistas&makingof">Entrevistas & Making of</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades">Novidades</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="txtPesquisa" type="search" placeholder="Pesquisar filme"
+                            aria-label="Search">
+                        <button id="btnPesquisa" class="btn btn-outline-light" type="button">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+ <main>
+        <section class="container-fluid main_lancamento">
+            
+        <div class="container carrosel">
+            <div class="row">
+                <h2 class="lancamentos" id="lancamentos">Lançamentos</h2>
+            </div>
+
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+
+
+                    <div class="carousel-inner" id="carousel">
+                        <div class="carousel-item active">
+                            <div class="row" style="margin-bottom: 35px;">
+                                <div class="col-xs-12 col-12 col-md-12 col-lg-6 col-sm-12" style="min-height: 294px;">
+                                    <img class="imagemCarousel" src="https://image.tmdb.org/" alt="">
+                                </div>
+                                <div class="col-xs-12 col-12 col-lg-6 col-md-12">
+                                    <p1 height="100% "></p1>
+                
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                            <h1 class="titulo_filme">O Pacote</h1>
+                                        </div>
+                                    </div>
+                                        <div class="row detalhes_filme">
+                                    
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <b>Sinopse:</b> Quando cinco amigos adolescentes resolvem fazer um acampamento de primavera, um infeliz acidente desencadeia uma corrida contra o tempo na tentativa de salvar o bem mais precioso de um dos integrantes da turma.
+                                                </div>
+
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Linguagem original:</b> En
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Popularidade:</b> 1111
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Estreia:</b> 10/08/2018 
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Avaliação:</b> ★ 6.9
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button>Saiba Mais..</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row" style="margin-bottom: 35px;">
+                            <div class="col-xs-12 col-12 col-md-12 col-lg-6" style="min-height: 294px;">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HTLPULt0eJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-xs-12 col-12 col-lg-6 col-md-12">
+                                <p1 height="100% "></p1>
+            
+                                <div class="row ">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h1 class="titulo_filme">Todo Mundo em Pânico</h1>
+                                    </div>
+                                </div>
+                                    <div class="row detalhes_filme">
+                                
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <b>Sinopse:</b> Das mentes dos criadores do seriado da TV americana "In living color" surge o primeiro thriller-comédia, em que adolescentes apavorados fugindo de maníacos assassinos são o pretexto para uma série de piadas envolvendo todos os recentes filme de terror, da série "Pânico" até "O sexto sentido", passando ainda por outros grandes sucessos do cinema, como "Matrix" e "Os suspeitos".
+                                            </div>
+
+                                <div class="row ">
+                                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                        <b>Diretor:</b> Keenen Wayans
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                        <b>Roteiro:</b> Shawn Wayans, Marlon Wayans
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                        <b>Estreia:</b> 06/10/2000 
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <b>Elenco:</b> Anna Faris | Shawn Wayans | Marlon Wayans
+                                </div>
+
+                                <div class="col-12">
+                                    <b>Avaliação:</b> ★★★★☆
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="carousel-item">
+                    <div class="row" style="margin-bottom: 35px;">
+                        <div class="col-xs-12 col-12 col-md-12 col-lg-6" style="min-height: 294px;">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tcdUhdOlz9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-xs-12 col-12 col-lg-6 col-md-12">
+                            <p1 height="100% "></p1>
+        
+                            <div class="row ">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h1 class="titulo_filme">Se Beber não Case</h1>
+                                </div>
+                            </div>
+                                <div class="row detalhes_filme">
+                            
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <b>Sinopse:</b> Doug Billings está prestes a se casar. Stu Price, um dentista que planeja pedir a namorada em casamento, Phil Wenneck , um professor colegial entediado com o matrimônio, e Alan Garner, seu futuro cunhado, são seus melhores amigos. O trio organiza uma festa de despedida de solteiro para Doug, levando-o para Las Vegas. Lá eles alugam uma suíte e têm uma noite de grande badalação. Na manhã seguinte os três acordam sem ter a menor idéia do que aconteceu na noite anterior. Eles sabem apenas que Stu perdeu um dente, há um tigre no banheiro, um bebê no closet e Doug simplesmente desapareceu. Para descobrir o que ocorreu, eles tentam juntar as memórias e reconstituir os eventos do dia anterior.
+                                        </div>
+
+                            <div class="row ">
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                    <b>Diretor:</b> Todd Phillips
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                    <b>Roteiro:</b> Jon Lucas, Scott Moore
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                    <b>Estreia:</b> 21/08/2009
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <b>Elenco:</b> Bradley Cooper | Ed Helms | Zach Galifianakis
+                            </div>
+
+                            <div class="col-12">
+                                <b>Avaliação:</b> ★★★★☆
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="carousel-item">
+                <div class="row" style="margin-bottom: 35px;">
+                    <div class="col-xs-12 col-12 col-md-12 col-lg-6" style="min-height: 294px;">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CyiiEJRZjSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12 col-12 col-lg-6 col-md-12">
+                        <p1 height="100% "></p1>
+    
+                        <div class="row ">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <h1 class="titulo_filme">Spider-Man: No Way Home</h1>
+                            </div>
+                        </div>
+                            <div class="row detalhes_filme">
+                        
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <b>Sinopse:</b> Peter Parker precisará lidar com as consequências da sua identidade ter sido revelada pela gravação feita por Mysterio no filme anterior. Incapaz de separar sua vida normal das aventuras de ser um super-herói, Parker pede ao Doutor Estranho para que todos esqueçam sua verdadeira identidade. Entretanto, o feitiço não sai como planejado e a situação torna-se ainda mais perigosa com a chegada de vilões de outro multiverso. Agora, Peter não só deter vilões de suas outras versões e fazer com que eles voltem para seu universo original, mas também aprender que, com grandes poderes vem grandes responsabilidades como herói.
+                                    </div>
+
+                        <div class="row ">
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                <b>Diretor:</b> Jon Watts
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                <b>Roteiro:</b> Chris McKenna, Steve Ditko
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                <b>Estreia:</b> 16/12/2021
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <b>Elenco:</b> Tom Holland | Zendaya | Benedict Cumberbatch
+                        </div>
+
+                        <div class="col-12">
+                            <b>Avaliação:</b> ★★★★☆
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="carousel-item">
+            <div class="row" style="margin-bottom: 35px;">
+                <div class="col-xs-12 col-12 col-md-12 col-lg-6" style="min-height: 294px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vHtNPZ5hhOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-xs-12 col-12 col-lg-6 col-md-12">
+                    <p1 height="100% "></p1>
+
+                    <div class="row ">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h1 class="titulo_filme">O Amor é Cego</h1>
+                        </div>
+                    </div>
+                        <div class="row detalhes_filme">
+                    
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <b>Sinopse:</b> Hal é um homem que segue à risca o conselho de seu pai e apenas se interessa por mulheres que tenham um físico perfeito. Mas tudo muda quando ele por acaso se encontra com Anthony Robbins, um guru de auto-ajuda que o hipnotiza e faz com que ele apenas possa visualizar a beleza interior das mulheres, em detrimento de seu físico. Sem saber que está sob o efeito de hipnose, Hal então se apaixona por Rosemary, uma mulher obesa que é vista por ele como se fosse uma verdadeira deusa. Até que, após ser retirado da hipnose por seu amigo Mauricio, ele passa a ver como Rosemary é de verdade fisicamente e precisa tomar uma decisão sobre seu relacionamento com ela.
+                                </div>
+
+                    <div class="row ">
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                            <b>Diretor:</b> Bobby Farrelly, Peter Farrelly
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                            <b>Roteiro:</b> Peter Farrelly, Bobby Farrelly
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                            <b>Estreia:</b> 15/02/2002
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <b>Elenco:</b> Gwyneth Paltrow | Jack Black | Jason Alexander
+                    </div>
+
+                    <div class="col-12">
+                        <b>Avaliação:</b> ★★★★☆
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="destaques" id="destaques">Em destaque</h2>
+            </div>
+            <div class="col-6">
+                <div class="dropdown" style="text-align: right;">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categoria: TODOS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Comédia</a></li>
+                        <li><a class="dropdown-item" href="#">Ação</a></li>
+                        <li><a class="dropdown-item" href="#">Anime</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+
+                    <div class="card">
+                        <img id="card1" src="imagens/" class="card-img-top" alt="filme1" onclick="clickFilme(this.id)">
+                        <div class="card-body">
+                            <p id="nomeFilme1" class="card-text"><b>Todo Mundo em Pânico</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card">
+                        <img id="card2" src="imagens/" class="card-img-top" alt="filme1" onclick="clickFilme(this.id)">
+                        <div class="card-body">
+                            <p id="nomeFilme2" class="card-text"><b>Se Beber não Case</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card">
+                        <img id="card3" src="imagens/" class="card-img-top" alt="filme1" onclick="clickFilme(this.id)">
+                        <div class="card-body">
+                            <p id="nomeFilme3" class="card-text"><b>Spider-Man: No Way Home</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card">
+                        <img id="card4" src="imagens/" class="card-img-top" alt="filme1" onclick="clickFilme(this.id)">
+                        <div class="card-body">
+                            <p id="nomeFilme4" class="card-text"><b>O Amor é Cego</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container carregar_filmes">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais filmes</button>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="ultimas_avaliacoes">
+            <div class="container">
+                <h2 class="ultimas_avaliacoes" id="avaliacoes">Últimas Avaliações</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="perfil_comentario">
+                                                <img class="img_perfil" src="imagens/perfil1.jpg"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-9 col-xs-12">
+                                            <h4>Fernanda</h4>
+                                            <p><b>Avaliação:</b> Como gosta essa Netflix de fazer filme ruim!! Atribuiria duas estrelas, porque de fato, o filme apresenta cenas, realmente engraçadas e o trio de meninos, são jóias a serem lapidadas pela comédia. Entretanto, tá de bom tamanho uma estrela.</p>
+                                            <p>★☆☆☆☆ - 01/04/2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="perfil_comentario">
+                                                <img class="img_perfil" src="imagens/perfil2.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4>Iverson</h4>
+                                            <p><b>Avaliação:</b> É um filme para literalmente não ser levado a sério. Um filme despretensioso que deve ser assistido sem pretensão alguma. Diante de tantos besteirol americano, os filme acabam perdendo a graça por parecerem repetitivos ou besta de mais.Curti muito, recomendo!</p>
+                                            <p>★★★★★ - 09/11/2020</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="perfil_comentario">
+                                                <img class="img_perfil" src="imagens/perfil3.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4>João</h4>
+                                            <p><b>Avaliação:</b> Engraçado / divertido, poucas piadas são forçadas vale a pena, esse filme é aquele que a gente sabe que vai assistir e dar bastante risada. Nada inovador mas hilário,não é o melhor filme do mundo mas vale a pena.</p>
+                                            <p>★★★★☆ - 09/02/2019</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container carregar_avaliacoes">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais avaliações</button>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+
+        <section class="entrevistas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 background">
+                        <h2 class="entrevistas_makingof" id="entrevistas&makingof">Entrevistas & Making of</h2>
+                    
+                <div class="container">
+                <div class="row">
+
+                        <div class="container makingof">
+                            <div class="row">
+                                 <div class="col-4">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LMZPnwz_dT0?autoplay=0&mute0&controls=0" title="Entrevista Homem Aranha" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                 </div>
+                                <div class="col-4">
+                                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/q4rwK-HKO7g?autoplay=0&mute0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                 <div class="col-4">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HFUMmciJGxU?autoplay=0&mute0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                             </div>
+                        </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p><b>Filme:</b> Homem-Aranha: Sem Volta para Casa.<br>
+                                <b>Diretor:</b> Jon Watts.<br>
+                                <b>Roteiro:</b> Chris McKenna, Steve Ditko. <b>Estreia:</b> 2021
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p><b>Filme:</b> Se Beber não Case.<br>
+                                <b>Diretor:</b> Todd Phillips.<br>
+                                <b>Roteiro:</b> Jon Lucas, Scott Moore. <b>Estreia:</b> 2009
+                            </p>
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p><b>Filme:</b> Todo Mundo em Pânico.<br>
+                                <b>Diretor:</b> Keenen Ivory Wayans.<br>
+                                <b>Roteiro:</b> Shawn Wayans, Marlon Wayans. <b>Estreia:</b> 2000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <div class="container carregar_avaliacoes">
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais filmes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="novidades" id="novidades">Novidades</h2>
+
+                        <div class="container novidade1">
+                            <div class="row">
+                                <div class="col-xs-12 col-11 col-lg-4 col-md-12">
+                                    <img src="imagens/novidades.jpg" class="img_novidade">
+                                </div>
+                                <div class="col-xs-12 col-12 col-lg-6 col-md-12">
+                                    <h5> <b>Possível "Espetacular Homem-Aranha 3"</b></h5>
+                                    <p>Homem-Aranha: Sem Volta Para Casa deixou um cenário ótimo para "O Espetacular Homem-Aranha 3" de Andrew Garfield, como aponta o ScreeRant. </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container novidade2">
+                            <div class="row">
+                                <div class="col-xs-12 col-11 col-lg-4 col-md-12">
+                                    <img src="imagens/doutor-estranho-1-estreia.jpg" class="img_novidade2">
+                                </div>
+                                <div class="col-xs-12 col-12 col-lg-6 col-md-12">
+                                    <h5><b>Doutor Estranho 2: Personagem inédita é vista no novo vídeo do filme.</b></h5>
+                                    <p>Como indica o novo comercial do filme, nenhuma boa ação fica sem punição, pois o mago do Marvel Studios vai ter que encarar a conta de todas as confusões que causou no multiverso..
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container novidade3">
+                            <div class="row">
+                                <div class="col-xs-12 col-11 col-lg-4 col-md-12">
+                                    <img src="imagens/suzume-no-tojimari.jpg" class="img_novidade3">
+                                </div>
+                                <div class="col-xs-12 col-12 col-lg-6 col-md-12">
+                                    <h5><b>O novo anime do criador de "Your Name" ganhou trailer!</b></h5>
+                                    <p>Suzume no Tojimari é o novo anime do criador de Your Name (Kimi no Na Wa) que promete ser mais um mega hit na lista do diretor Makoto Shinkai. Estreia em 11 de Novembro e nesse vídeo comento o trailer que soltaram.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                 <div class="col-4">
+                    <h2 class="sobre">Sobre</h2>
+                    <p><b>Site geek para análise e críticas de filmes.</b><br>
+                    Criado com intuito educacional para fins avaliativos, ofertada pelo professor Rommel Carneiro na disciplina de Desenvolvimento de Interfaces Web.</p>
+                        
+                    <h2 class="editorial">Editorial</h2>
+                    <section class="text-editorial"><img src="imagens/user.png">  <b>Redação:</b> Carlos Eduardo Meints<br></section>
+                    <section class="text-editorial"><img src="imagens/user.png">  <b>Pesquisa:</b> Carlos Eduardo Meints<br></section>
+                    <section class="text-editorial"><img src="imagens/user.png">  <b>Gerente Geral:</b> Carlos Eduardo Meints<br></section>
+
+                    <b class="redes-sociais"><h4>Redes Sociais:</h4></b>
+                    <section class="logo-rede-sociais"><img src="imagens/logos.png"></section> 
+                </div>
+
+
+            </div>
+</section>
+
+        
+</main>
+
+
+<footer> 
+    <section class="container-fluid footer">
+    <div class="row">
+        <h5 class="col-10 copy">© 2022 Copyright: Desenvolvimento de Interfaces Web -
+            <b>ICEI PUC MINAS</b> </h5>
+            <img class="col-2 logo2" src="imagens/PucFlix branco.png">
+    </div>
+    </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

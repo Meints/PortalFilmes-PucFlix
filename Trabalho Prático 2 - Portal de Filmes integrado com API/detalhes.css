@@ -1,0 +1,30 @@
+.headerDetalhes{
+    background-color: red;
+ }
+.logo{
+    max-width: 150px;
+}
+.body{
+    background-color:rgb(24, 29, 32);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.parteFilme{
+    margin-top: 200px;
+}
+/* .parteFilme{
+    background-image: url(imagens/tira-de-filme-realsitic-em-fundo-preto_1017-33462.jpeg);
+    padding: 0;
+} */
+.imagemDetalhes{
+    width: 100%;
+}
+#movieId{
+    color: #fff;
+}
